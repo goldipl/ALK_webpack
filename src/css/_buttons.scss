@@ -1,7 +1,9 @@
+@import "./variables";
+
 /* buttons */
 button {
-  background-color: #d07c7c;
-  color: #ffffff;
+  background-color: $lightRedColor;
+  color: $whiteColor01;
   border: none;
   cursor: pointer;
   padding: 10px 30px;

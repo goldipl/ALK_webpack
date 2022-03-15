@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import "./reset";
+@import "./variables";
 @import "./buttons";
 @import "./form";
 @import "./video";
@@ -18,7 +19,7 @@ body {
   width: 100%;
   padding: 25px;
   line-height: 1.5;
-  color: #686868;
+  color: $greyColor01;
 }
 
 .container {
@@ -51,7 +52,7 @@ h3,
 header {
   position: relative;
   background: url("https://image.ibb.co/jBXfxA/bg-contact.jpg") no-repeat center center/cover;
-  color: #ffffff;
+  color: $whiteColor01;
   padding: 15% 0 0 0;
   min-height: 650px;
 }
@@ -87,7 +88,7 @@ h1 span:last-child {
     left: -webkit-calc(50% - 41px);
     left: calc(50% - 41px);
     bottom: -10px;
-    background: #ffffff;
+    background: $whiteColor01;
   }
 }
 
@@ -100,8 +101,8 @@ h1 span:last-child {
 }
 
 .menu {
-  color: #686868;
-  background: #ffffff;
+  color: $greyColor01;
+  background: $whiteColor01;
   display: block;
   position: absolute;
   right: 0;
@@ -133,7 +134,7 @@ h1 {
     width: 40px;
     height: 3px;
     margin-top: 7px;
-    background-color: #686868;
+    background-color: $greyColor01;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -146,7 +147,7 @@ h1 {
 .nav-main {
   display: none;
   clear: both;
-  background: #ffffff;
+  background: $whiteColor01;
   a {
     position: relative;
     text-decoration: none;
@@ -164,7 +165,7 @@ h1 {
       left: 0;
       height: 4px;
       width: 100%;
-      background-color: #d07c7c;
+      background-color: $lightRedColor;
       -webkit-transform: scale(0, 1);
       -ms-transform: scale(0, 1);
       -o-transform: scale(0, 1);
@@ -178,7 +179,7 @@ h1 {
       transition: 0.3s;
     }
     &:hover {
-      color: #d07c7c;
+      color: $lightRedColor;
       font-weight: bold;
       &::before {
         -webkit-transform: scale(1, 1);

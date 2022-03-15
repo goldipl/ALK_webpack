@@ -1,3 +1,4 @@
+@import "./variables";
 /*contact */
 #contact {
   position: relative;
@@ -36,7 +37,7 @@ h3:after {
   left: -webkit-calc(50% - 36px);
   left: calc(50% - 36px);
   bottom: 0px;
-  background: #d07c7c;
+  background: $lightRedColor;
 }
 
 h3 {
