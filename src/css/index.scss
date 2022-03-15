@@ -78,27 +78,25 @@ h1 span:last-child {
   font-size: 48px;
   font-size: 3rem;
   position: relative;
-}
-
-.title-sub:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 82px;
-  height: 3px;
-  left: -webkit-calc(50% - 41px);
-  left: calc(50% - 41px);
-  bottom: -10px;
-  background: #ffffff;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 82px;
+    height: 3px;
+    left: -webkit-calc(50% - 41px);
+    left: calc(50% - 41px);
+    bottom: -10px;
+    background: #ffffff;
+  }
 }
 
 .title-blurb {
   padding: 40px 0;
-}
-
-.title-blurb span {
-  display: block;
-  line-height: 25px;
+  span {
+    display: block;
+    line-height: 25px;
+  }
 }
 
 .menu {
@@ -209,10 +207,9 @@ h1 {
     width: 48%;
     display: block;
     float: left;
-  }
-
-  .figure-sm.one {
-    margin-left: 4%;
+    &.one {
+      margin-left: 4%;
+    }
   }
 }
 
@@ -225,20 +222,17 @@ h1 {
     display: block;
     float: right;
     width: 70%;
-  }
-
-  .nav-main ul {
-    text-align: right;
-  }
-
-  .nav-main li {
-    display: inline-block;
-    margin-left: 40px;
-  }
-
-  .nav-main a {
-    text-transform: uppercase;
-    padding: 0;
+    ul {
+      text-align: right;
+    }
+    li {
+      display: inline-block;
+      margin-left: 40px;
+    }
+    a {
+      text-transform: uppercase;
+      padding: 0;
+    }
   }
 
   .work-column-lg {
@@ -252,24 +246,21 @@ h1 {
     width: 35.5%;
     float: left;
     margin-left: 3%;
-  }
-
-  .work-column-sm img {
-    height: auto;
+    img {
+      height: auto;
+    }
   }
 
   form {
     padding-bottom: 40px;
-  }
-
-  form p {
-    display: inline-block;
-    float: left;
-  }
-
-  form .button-send {
-    float: right;
-    margin-top: 0;
+    p {
+      display: inline-block;
+      float: left;
+    }
+    .button-send {
+      float: right;
+      margin-top: 0;
+    }
   }
 
   .text-center form p,
