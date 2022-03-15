@@ -16,6 +16,7 @@ figure {
   display: inline-block;
   width: 100%;
 }
+
 figure:before {
   content: "";
   position: absolute;
@@ -29,29 +30,36 @@ figure:before {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 figure:hover:before {
   opacity: 0.7;
 }
+
 figure:hover .caption-head:before {
   left: -20px;
   top: -20px;
 }
+
 figure:hover .caption-head:after {
   right: -20px;
   top: -20px;
 }
+
 figure:hover .caption-blurb:before {
   left: -20px;
   bottom: -20px;
 }
+
 figure:hover .caption-blurb:after {
   right: -20px;
   bottom: -20px;
 }
+
 figure img {
   width: 100%;
   display: block;
 }
+
 figure figcaption {
   position: absolute;
   top: 50%;
@@ -67,6 +75,7 @@ figure figcaption {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 figure figcaption:before {
   content: "";
   position: absolute;
@@ -80,6 +89,7 @@ figure figcaption:before {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
 }
+
 figure figcaption .caption-head {
   position: relative;
   font-family: "Roboto";
@@ -87,6 +97,7 @@ figure figcaption .caption-head {
   font-size: 22px;
   font-size: 1.375rem;
 }
+
 figure figcaption .caption-head:before {
   content: "";
   position: absolute;
@@ -100,6 +111,7 @@ figure figcaption .caption-head:before {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 figure figcaption .caption-head:after {
   content: "";
   position: absolute;
@@ -113,9 +125,11 @@ figure figcaption .caption-head:after {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 figure figcaption .caption-blurb {
   position: relative;
 }
+
 figure figcaption .caption-blurb:before {
   content: "";
   position: absolute;
@@ -129,6 +143,7 @@ figure figcaption .caption-blurb:before {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 figure figcaption .caption-blurb:after {
   content: "";
   position: absolute;

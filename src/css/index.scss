@@ -34,6 +34,7 @@ h3,
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .arrow:hover {
   -webkit-transform: scale(2.5);
   -ms-transform: scale(2.5);
@@ -44,8 +45,7 @@ h3,
 /* LAYOUT  */
 header {
   position: relative;
-  background: url("https://image.ibb.co/jBXfxA/bg-contact.jpg") no-repeat center
-    center/cover;
+  background: url("https://image.ibb.co/jBXfxA/bg-contact.jpg") no-repeat center center/cover;
   color: #ffffff;
   padding: 15% 0 0 0;
   min-height: 650px;
@@ -57,10 +57,12 @@ h1 {
   font-size: 30px;
   font-size: 1.875rem;
 }
+
 .title-main span,
 h1 span {
   display: block;
 }
+
 .title-main span:last-child,
 h1 span:last-child {
   font-size: 23px;
@@ -88,6 +90,7 @@ h1 span:last-child {
 .title-blurb {
   padding: 40px 0;
 }
+
 .title-blurb span {
   display: block;
   line-height: 25px;
@@ -123,6 +126,7 @@ h1 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .nav-toggle div {
   display: block;
   width: 40px;
@@ -133,6 +137,7 @@ h1 {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .nav-toggle:hover {
   opacity: 0.7;
 }
@@ -142,6 +147,7 @@ h1 {
   clear: both;
   background: #ffffff;
 }
+
 .nav-main a {
   position: relative;
   text-decoration: none;
@@ -153,6 +159,7 @@ h1 {
   width: 100%;
   padding: 20px 0;
 }
+
 .nav-main a::before {
   content: "";
   position: absolute;
@@ -173,10 +180,12 @@ h1 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .nav-main a:hover {
   color: #d07c7c;
   font-weight: bold;
 }
+
 .nav-main a:hover::before {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -200,11 +209,13 @@ footer .copy {
     min-height: 95vh;
     padding-top: 14em;
   }
+
   .figure-sm {
     width: 48%;
     display: block;
     float: left;
   }
+
   .figure-sm.one {
     margin-left: 4%;
   }
@@ -214,47 +225,58 @@ footer .copy {
   .nav-toggle {
     display: none;
   }
+
   .nav-main {
     display: block;
     float: right;
     width: 70%;
   }
+
   .nav-main ul {
     text-align: right;
   }
+
   .nav-main li {
     display: inline-block;
     margin-left: 40px;
   }
+
   .nav-main a {
     text-transform: uppercase;
     padding: 0;
   }
+
   .work-column-lg {
     display: block;
     width: 61.5%;
     float: left;
   }
+
   .work-column-sm {
     display: block;
     width: 35.5%;
     float: left;
     margin-left: 3%;
   }
+
   .work-column-sm img {
     height: auto;
   }
+
   form {
     padding-bottom: 40px;
   }
+
   form p {
     display: inline-block;
     float: left;
   }
+
   form .button-send {
     float: right;
     margin-top: 0;
   }
+
   .text-center form p,
   h2 form p,
   h3 form p,
