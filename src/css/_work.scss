@@ -1,3 +1,5 @@
+@import "./mixins";
+
 /* work */
 .work-wrap:before,
 .work-wrap:after {
@@ -15,43 +17,50 @@ figure {
   cursor: pointer;
   display: inline-block;
   width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  &:hover:before {
+    opacity: 0.7;
+  }
 }
-figure:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-figure:hover:before {
-  opacity: 0.7;
-}
+
+
 figure:hover .caption-head:before {
   left: -20px;
   top: -20px;
 }
+
 figure:hover .caption-head:after {
   right: -20px;
   top: -20px;
 }
+
 figure:hover .caption-blurb:before {
   left: -20px;
   bottom: -20px;
 }
+
 figure:hover .caption-blurb:after {
   right: -20px;
   bottom: -20px;
 }
+
 figure img {
   width: 100%;
   display: block;
 }
+
 figure figcaption {
   position: absolute;
   top: 50%;
@@ -66,81 +75,65 @@ figure figcaption {
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    top: -webkit-calc(50% + 2px);
+    top: calc(50% + 2px);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+  }
 }
-figure figcaption:before {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 2px;
-  top: -webkit-calc(50% + 2px);
-  top: calc(50% + 2px);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-}
+
+
 figure figcaption .caption-head {
   position: relative;
   font-family: "Roboto";
   text-transform: uppercase;
   font-size: 22px;
   font-size: 1.375rem;
+  &:before {
+    @include caption-line();
+    left: 0;
+    top: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  &:after {
+    @include caption-line();
+    right: 0;
+    top: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
 }
-figure figcaption .caption-head:before {
-  content: "";
-  position: absolute;
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  height: 20px;
-  width: 20px;
-  left: 0;
-  top: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-figure figcaption .caption-head:after {
-  content: "";
-  position: absolute;
-  border-top: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  height: 20px;
-  width: 20px;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
+
+
 figure figcaption .caption-blurb {
   position: relative;
-}
-figure figcaption .caption-blurb:before {
-  content: "";
-  position: absolute;
-  border-bottom: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  height: 20px;
-  width: 20px;
-  left: 0;
-  bottom: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-figure figcaption .caption-blurb:after {
-  content: "";
-  position: absolute;
-  border-bottom: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  height: 20px;
-  width: 20px;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  &:before {
+    @include caption-line();
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  &:after {
+    @include caption-line();
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
 }
 
 #testimonials {
