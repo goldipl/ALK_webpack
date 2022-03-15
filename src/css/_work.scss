@@ -100,6 +100,8 @@ figure figcaption .caption-head {
   font-size: 1.375rem;
   &:before {
     @include caption-line();
+    border-top: 2px solid $whiteColor01;
+    border-left: 2px solid $whiteColor01;
     left: 0;
     top: 0;
     -webkit-transition: all 1s ease-in-out;
@@ -108,6 +110,8 @@ figure figcaption .caption-head {
   }
   &:after {
     @include caption-line();
+    border-top: 2px solid $whiteColor01;
+    border-right: 2px solid $whiteColor01;
     right: 0;
     top: 0;
     -webkit-transition: all 1s ease-in-out;
@@ -121,6 +125,8 @@ figure figcaption .caption-blurb {
   position: relative;
   &:before {
     @include caption-line();
+    border-bottom: 2px solid $whiteColor01;
+    border-left: 2px solid $whiteColor01;
     left: 0;
     bottom: 0;
     -webkit-transition: all 1s ease-in-out;
@@ -129,6 +135,8 @@ figure figcaption .caption-blurb {
   }
   &:after {
     @include caption-line();
+    border-bottom: 2px solid $whiteColor01;
+    border-right: 2px solid $whiteColor01;
     right: 0;
     bottom: 0;
     -webkit-transition: all 1s ease-in-out;

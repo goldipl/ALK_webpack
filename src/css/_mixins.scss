@@ -1,8 +1,6 @@
 @mixin caption-line() {
     content: "";
     position: absolute;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
     height: 20px;
     width: 20px;
 }
