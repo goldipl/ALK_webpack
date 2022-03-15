@@ -1,0 +1,39 @@
+/* form */
+form {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 550px;
+  }
+  form p {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-size: 0.75rem;
+    outline: none;
+    padding: 15px;
+    color: #686868;
+    border: 2px solid #d07c7c;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  section .text-center p,
+  section h2 p,
+  section h3 p,
+  section .nav-main p {
+    padding: 0 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
