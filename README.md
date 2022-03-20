@@ -1,6 +1,7 @@
 ## Webpack project - ALK studies
+Webpage application written using Vanilla JavaScript, NodeJS, Webpack & SCSS styled.
 
-### Technologies list
+### List of technologies
 * JavaScript
 * NodeJS
 * SCSS
