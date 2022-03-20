@@ -12,7 +12,7 @@
 run app test
 * `npm run build`   
 run app build
-* `npm run start:dev`
+* `npm run start:dev`   
 run app
 
 ### Versions
