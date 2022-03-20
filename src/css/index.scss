@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import "./base/reset";
-@import "./base/layout";
+@import "./base/layout/layout_main";
 @import "./utils/variables";
 @import "./base/buttons";
 @import "./base/form";
 @import "./base/video";
 @import "./base/work";
 @import "./base/contact";
-@import "./base/footer";
+@import "./base/layout/layout_footer";
 
 html {
   overflow-x: hidden;
