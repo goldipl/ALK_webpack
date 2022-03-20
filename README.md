@@ -18,5 +18,8 @@ run app
 ### Versions
 * version 1.0
 
+### Deploy environment
+[Netlify](https://www.netlify.com/)
+
 ### Author
 Marcin
